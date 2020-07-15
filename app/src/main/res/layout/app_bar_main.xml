@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white">
+
+            <TextView
+                android:textColor="@color/blackish"
+                android:textStyle="bold"
+                android:text="@string/app_name"
+                android:textSize="@dimen/text_18sp"
+                android:gravity="center"
+                android:id="@+id/titleTool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_marginStart="200dp"
+                android:paddingEnd="15dp"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <ImageView
+                    android:scaleType="centerInside"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/nss_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

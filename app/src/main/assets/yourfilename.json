@@ -1,0 +1,31 @@
+{
+  "formules": [
+    {
+      "formule": "Rel Motion",
+      "url": "qp12",
+      "shit": 12,
+      "chair": [
+        "one leg",
+        "two legs"
+      ]
+    },
+    {
+      "formule": "Linear Motion",
+      "url": "qp1",
+      "shit": 14,
+      "chair": [
+        "one and half leg",
+        "two legs"
+      ]
+    },
+    {
+      "formule": "ganda Motion",
+      "url": "qp10",
+      "shit": 15,
+      "chair": [
+        "one 3 by 4 leg",
+        "two legs"
+      ]
+    }
+  ]
+}

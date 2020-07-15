@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/replace2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.work.WorkFragment">
+
+    <include
+        android:id="@+id/mainFY_camp"
+        layout="@layout/nss_fy_common" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/padding_5dp"
+        android:id="@+id/work_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:foreground="@drawable/main_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainFY_camp">
+
+        <TextView
+            android:id="@+id/camp_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="CAMP"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_22sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/camp_frag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/work_header">
+
+        <LinearLayout
+            android:id="@+id/camp_main_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_3dp"
+            android:background="@drawable/act_bg_lines"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/camp_act"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Camp Activities List"
+                android:textSize="@dimen/text_18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/blackish"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/camp_days"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Camp Days"
+                android:textSize="@dimen/text_18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/blackish"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/camp_details"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Camp Details"
+                android:textSize="@dimen/text_18sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

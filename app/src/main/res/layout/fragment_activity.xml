@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.ActivityFragment">
+
+    <include
+        android:id="@+id/mainFY_act"
+        layout="@layout/nss_fy_common" />
+
+    <LinearLayout
+        android:id="@+id/act_header"
+        android:layout_height="70dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainFY_act">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Activity List"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_22sp" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/division"
+        layout="@layout/nss_halves_fy_common"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/act_header" />
+
+    <FrameLayout
+        android:id="@+id/act_list"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/division" />
+</androidx.constraintlayout.widget.ConstraintLayout>

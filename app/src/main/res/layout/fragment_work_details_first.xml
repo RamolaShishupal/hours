@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.work.WorkDetailsFirstFrag">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="@dimen/space_10dp"
+            android:text="@string/nature_of_work"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="@dimen/space_10dp"
+            android:text="Total\nHours"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="@dimen/space_10dp"
+            android:text="@string/completed_hours"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="@dimen/space_10dp"
+            android:text="@string/remaining_hours"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/firstWorkRec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/act_bg_lines"
+        app:layout_constraintTop_toBottomOf="@+id/main" />
+</androidx.constraintlayout.widget.ConstraintLayout>

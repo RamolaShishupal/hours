@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup"
+    tools:context=".SignupActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/inputDetailsReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/fname"
+                style="@style/signUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/signup_roundbg"
+                android:hint="First Name" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/last_name"
+                style="@style/signUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/signup_roundbg"
+                android:hint="Last Name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/fath_name"
+                android:inputType="text"
+                style="@style/signUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/signup_roundbg"
+                android:hint="Father Name" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/mom_name"
+                style="@style/signUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/signup_roundbg"
+                android:hint="Mother Name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="25dp"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vec_clg_pref"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="18dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/signup_roundbg"
+                android:foreground="@color/transparent"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/blackish" />
+
+            <EditText
+                android:id="@+id/vec_in"
+                android:layout_weight="0.85"
+                style="@style/signUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:background="@drawable/signup_roundbg"
+                android:hint="VEC" />
+
+            <Spinner
+                android:id="@+id/dropdown_clg"
+                style="@style/signUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:background="@drawable/signup_roundbg" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/email_in"
+            style="@style/signUp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/signup_roundbg"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/contact_no"
+                style="@style/signUp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/signup_roundbg"
+                android:hint="Phone No"
+                android:inputType="phone"
+                android:maxLength="10" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signup_post"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/ripple_signup"
+        android:text="Sign Up!"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputDetailsReg" />
+</androidx.constraintlayout.widget.ConstraintLayout>

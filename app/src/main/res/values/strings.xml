@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">NSS</string>
+    <string name="edittextUsername"><font size="14">Username</font></string>
+    <string name="edittextPassword"><font size="14">Password</font></string>
+    <string name="title_activity_ediary">ediary</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="main_frag">NSS</string>
+    <string name="menu_activity">Activity List</string>
+    <string name="menu_work_hours">Work Hours</string>
+    <string name="menu_camp">Camp</string>
+    <string name="menu_subm">Submission</string>
+    <string name="menu_notif">Notification</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_setts">Settings</string>
+
+    <string name="univ">Univeristy\nDistrict</string>
+    <string name="area">Area Based Project 1</string>
+    <string name="clg">College Work</string>
+
+    <string name="camp_details">Enter your everyday camp details below</string>
+
+    <string name="area2">Area Based Project 2</string>
+    <string name="nss_first_year">NSS FIRST YEAR</string>
+    <string name="work_hours">WORK HOURS</string>
+    <string name="help_details">For E-Diary/Activities related queries\ncontact the below authorities</string>
+    <string name="nss">National Service Scheme</string>
+    <string name="mu">MUMBAI UNIVERSITY</string>
+    <string name="completed_hours">Hours\nWorked</string>
+    <string name="nature_of_work">Nature\nOf Work</string>
+    <string name="remaining_hours">Remaining Hours</string>
+
+    <string-array name="days">
+        <item>DAY 1</item>
+        <item>DAY 2</item>
+        <item>DAY 3</item>
+        <item>DAY 4</item>
+        <item>DAY 5</item>
+        <item>DAY 6</item>
+        <item>DAY 7</item>
+    </string-array>
+
+    <string name="contact_no">Contact No: </string>
+    <string name="email">Email: </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

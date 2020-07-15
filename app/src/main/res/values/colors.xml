@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mainBg">@color/transparent</color>
+
+    <color name="colorPrimaryLight">#D2E9FF</color>
+    <color name="colorPrimary">#5E99FF</color>
+    <color name="colorPrimaryDark">#0B4FC5</color>
+    <color name="colorAccent">#18FFFF</color>
+    <color name="white">#ffffff</color>
+    <color name="blackGrey">#3A3A3A</color>
+    <color name="black">#000000</color>
+    <color name="grey">#454545</color>
+    <color name="blackish">#272727</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="one">#fe2c83</color>
+    <color name="two">#2bff89</color>
+    <color name="thr">#ffeb2b</color>
+    <color name="four">#FF8400</color>
+    <color name="five">#fa8072</color>
+    <color name="six">#0fffff</color>
+    <color name="sev">#ff69b4</color>
+</resources>

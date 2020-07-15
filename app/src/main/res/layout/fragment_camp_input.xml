@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/campDetailsCon"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/space_10dp"
+            android:text="@string/camp_details"
+            android:textColor="@color/blackish"
+            android:textSize="@dimen/text_18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_3dp"
+            android:background="@drawable/act_bg_lines"
+            android:padding="@dimen/space_10dp">
+
+            <TextView
+                android:id="@+id/which_day"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/campActName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_10dp"
+                    android:textColor="@color/blackGrey"
+                    android:textSize="@dimen/text_18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_15dp"
+                    android:background="#1A000000"
+                    android:minHeight="80dp"
+                    android:paddingStart="@dimen/space_10dp"
+                    android:paddingEnd="@dimen/space_10dp">
+
+                    <EditText
+                        android:id="@+id/campDesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_5dp"
+                        android:layout_marginBottom="@dimen/padding_5dp"
+                        android:background="@color/transparent"
+                        android:hint="Type something..."
+                        android:lineSpacingExtra="10dp"
+                        android:minHeight="50dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:textColor="@color/white">
+
+                    <Button
+                        android:id="@+id/submit_camp_detail"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_10dp"
+                        android:layout_marginRight="@dimen/space_10dp"
+                        android:background="@drawable/ripple"
+                        android:text="Submit"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

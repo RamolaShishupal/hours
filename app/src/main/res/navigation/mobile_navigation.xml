@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_main">
+
+    <fragment
+        android:id="@+id/nav_main"
+        android:name="com.test.nss.ui.main.MainFragment"
+        tools:layout="@layout/fragment_main"
+        android:label="@string/main_frag"/>
+    <fragment
+        android:id="@+id/nav_acti"
+        android:name="com.test.nss.ui.activity.ActivityFragment"
+        android:label="@string/menu_activity"
+        tools:layout="@layout/fragment_activity" />
+
+    <fragment
+        android:id="@+id/nav_work"
+        android:name="com.test.nss.ui.work.WorkFragment"
+        android:label="@string/menu_work_hours"
+        tools:layout="@layout/fragment_work" />
+
+
+    <fragment
+        android:id="@+id/nav_camp"
+        android:name="com.test.nss.ui.camp.CampFragment"
+        android:label="@string/menu_camp"
+        tools:layout="@layout/fragment_camp" />
+
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.test.nss.ui.help.HelpFragment"
+        android:label="@string/menu_help"
+        tools:layout="@layout/fragment_help" />
+</navigation>

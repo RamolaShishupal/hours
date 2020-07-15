@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/help_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/mainFY_help"
+        layout="@layout/nss_fy_common" />
+
+    <LinearLayout
+        android:id="@+id/help_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/padding_5dp"
+        android:background="@color/colorPrimary"
+        android:foreground="@drawable/main_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainFY_help">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/menu_help"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/help_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:lineSpacingExtra="2dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="@string/help_details"
+        android:textColor="@color/blackish"
+        android:textSize="@dimen/text_18sp"
+        app:layout_constraintTop_toBottomOf="@+id/help_header" />
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/help_text">
+
+        <Button
+            android:text="NSS Programme Officer"
+            android:layout_margin="1dp"
+            android:id="@+id/poButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/helpbg"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:textColor="@color/blackish"
+            android:textSize="@dimen/text_14sp" />
+
+        <LinearLayout
+            android:id="@+id/poDetails"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="@dimen/padding_5dp"
+                android:background="@drawable/helpbg"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginBottom="0.5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/emailPO"
+                    android:text="@string/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="@dimen/padding_5dp"
+                android:background="@drawable/helpbg"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/contactPO"
+                    android:text="@string/contact_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:text="Leader 1"
+            android:layout_margin="1dp"
+            android:id="@+id/lead1button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/helpbg"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:textColor="@color/blackish"
+            android:textSize="@dimen/text_14sp" />
+
+        <LinearLayout
+            android:id="@+id/lead1Details"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="@dimen/padding_5dp"
+                android:background="@drawable/helpbg"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginBottom="0.5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/emailLead1"
+                    android:text="@string/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="@dimen/padding_5dp"
+                android:background="@drawable/helpbg"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/contactLead1"
+                    android:text="@string/contact_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:text="Leader 2"
+            android:layout_margin="1dp"
+            android:id="@+id/lead2Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/helpbg"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:textColor="@color/blackish"
+            android:textSize="@dimen/text_14sp" />
+
+        <LinearLayout
+            android:id="@+id/lead2Details"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="@dimen/padding_5dp"
+                android:background="@drawable/helpbg"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="0.5dp"
+                android:layout_marginBottom="0.5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/emailLead2"
+                    android:text="@string/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="@dimen/padding_5dp"
+                android:background="@drawable/helpbg"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/contactLead2"
+                    android:text="@string/contact_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

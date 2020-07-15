@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.FirstHalfFrag">
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/act_details2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/act_bg_lines"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+    <TextView
+        android:id="@+id/area_act2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:gravity="center"
+        android:text="@string/area2"
+        android:textSize="@dimen/text_18sp" />
+
+    <View
+        android:id="@+id/line_main"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/blackish"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/univ_act"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:gravity="center"
+        android:text="University/District"
+        android:textSize="@dimen/text_18sp" />
+
+        <View
+            android:id="@+id/line_main2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/blackish"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/clg_act"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:gravity="center"
+            android:text="@string/clg"
+            android:textSize="@dimen/text_18sp" />
+    </LinearLayout>
+</FrameLayout>

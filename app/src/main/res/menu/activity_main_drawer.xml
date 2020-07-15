@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/ic_act_list"
+            android:id="@+id/nav_acti"
+            android:title="@string/menu_activity" />
+        <item
+            android:icon="@drawable/ic_hours"
+            android:id="@+id/nav_work"
+            android:title="@string/menu_work_hours" />
+        <item
+            android:icon="@drawable/ic_camp"
+            android:id="@+id/nav_camp"
+            android:title="@string/menu_camp" />
+
+        <item
+            android:icon="@drawable/ic_help"
+            android:id="@+id/nav_help"
+            android:title="@string/menu_help" />
+    </group>
+</menu>
