@@ -246,7 +246,7 @@ public class TestAdapter {
     public ArrayList<String> getHelpData() {
         ArrayList<String> res = new ArrayList<>();
         try {
-            String sql = "SELECT EmailID, Contact FROM Help";
+            String sql = "SELECT Email, Contact FROM Help";
             Cursor mCur = mDb.rawQuery(sql, null);
 
             if (mCur.getCount() == 0) {

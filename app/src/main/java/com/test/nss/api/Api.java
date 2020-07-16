@@ -43,6 +43,14 @@ public interface Api {
             @Field("CollegeName") String college_name,
             @Field("Contact") String contact
     );
+    @GET("/diary/api/selfRegistration/")
+    Call<ResponseBody> getHelpData(
+            @Field("Email") String email,
+            @Field("Contact") String contact
+
+
+
+    );
 
     @GET("/diary/api/collegenames/")
     Call<ResponseBody> getClgList();
